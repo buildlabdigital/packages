@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "turborepo",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -8,17 +8,20 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "latest",
+    "eslint": "^8.0.0",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
     "turbo": "latest"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {},
-  "packageManager": "pnpm@7.18.0"
+  "packageManager": "pnpm@7.26.3"
 }

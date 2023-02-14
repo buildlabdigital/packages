@@ -1,5 +1,6 @@
 # Turborepo starter
 
+//https://github.com/vercel/turbo/tree/main/examples/with-svelte
 This is an official pnpm starter turborepo.
 
 ## What's inside?
